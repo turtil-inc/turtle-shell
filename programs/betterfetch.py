@@ -1,19 +1,19 @@
 # SETTINGS:
-os = 'OS: Windows 11 Pro'
-os_ver = 'OS Version: 22H2'
-os_build = 'OS Build: 22621.1992'
-os_install_date = 'OS installed on: 08/10/2022'
-os_experience = 'OS Experience: Windows Feature Experience Pack 1000.22644.1000.0'
-os_kernel = 'OS Kernel: Windows_NT'
-os_arch = 'OS Architecture: x86_64'
+os = 'hans'
+os_ver = 'hans'
+os_build = 'hans'
+os_install_date = 'hans'
+os_experience = 'hans'
+os_kernel = 'hans'
+os_arch = 'hans'
 
-pc_name = 'Machine Name: DESKTOP-RVK2VV1'
-cpu = 'CPU: AMD Ryzen 5 5500@3.60 GHz'
-cpu_threads = 'CPU Threads: 12'
-cpu_cores = 'CPU Cores: 6'
-ram = 'RAM: 16GB installed, 15.9GB usable'
-gpu = 'GPU: NViDiA GEFORCE GTX 1660'
-mb = 'Motherboard: B450 GAMING PRO CARBON MAX WIFI'
+pc_name = 'hans'
+cpu = 'hans'
+cpu_threads = 'hans'
+cpu_cores = 'hans'
+ram = 'hans'
+gpu = 'hans'
+mb = 'hans'
 
 
 # PROGRAMS:
