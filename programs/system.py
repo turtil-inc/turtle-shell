@@ -57,6 +57,6 @@ def echo():
 
 
 def clear():
-    for i in range(1,500):
-        print()
+    if os.name == "posix": os.system("clear") 
+    else: os.system("cls")
         
