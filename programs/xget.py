@@ -1,5 +1,5 @@
 import wget
-import pip
+import os
 import zipfile as zf
 
 
@@ -16,13 +16,20 @@ def sapp():
     sapp = input('sapp pkg: ')
     if sappdir == '':
         idir = input('where do u want to install ' + sapp + '?')
+        if idir == '' or idir == ' ':
+            idir = os.getcwd()
     else:
         idir = sappdir
     if sapp == 'test':
-        pkg = 'url'
-    wget.download(pkg)
-    with zf.ZipFile(pkg) as f:
-        f.extractall()
+        pkg = 'https://github.com/nikkit001/test/archive/refs/heads/main.zip'
+        branch = 'main'
+        pkgfound = True
+    else: pkgfound = False
+    if pkgfound == True:
+        wget.download(pkg)
+        with zf.ZipFile(sapp + '-' + branch + '.zip') as f:
+            f.extractall()
+    else: print('package not found')
 
         
 def webget():
