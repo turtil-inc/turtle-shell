@@ -1,5 +1,6 @@
 import wget
 import pip
+import zipfile as zf
 
 
 # SETTINGS:
@@ -20,8 +21,10 @@ def sapp():
     if sapp == 'test':
         pkg = 'url'
     wget.download(pkg)
+    with zf.ZipFile(pkg) as f:
+        f.extractall()
 
         
-def urlget():
+def webget():
     url = input('url: ')
     wget.download(url)

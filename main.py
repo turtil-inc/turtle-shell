@@ -7,6 +7,7 @@ from programs import gamework as gw
 from programs import system as s
 from programs import printer as p
 from programs import xget as xg
+from programs import zippy as z
 
 
 def help():
@@ -69,6 +70,12 @@ def shell():
             s.clear()
         elif i == 'printer':
             p.run()
+        elif i == 'sapp':
+            xg.sapp()
+        elif i == 'webget':
+            xg.webget()
+        elif i == 'unzip':
+            z.unzip()
         else:
             print('Module "' + i + '" not found. Try again')
 

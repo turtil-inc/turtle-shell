@@ -6,4 +6,4 @@ pip install numpy, pip install wget
 ### Before you run main.py:
 Run setup.py!
 
-##Have fun!
+## Have fun!
