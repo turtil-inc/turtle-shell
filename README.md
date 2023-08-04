@@ -20,4 +20,6 @@ Run setup.py!
 
 ## Have fun
 
-## <url: "<https://github.com/nikkit001/turtle-shell/TASKS.md">>Taks</url>
+## [Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+## [Tasks](https://github.com/nikkit001/turtle-shell/TASKS.md)
