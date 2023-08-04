@@ -14,7 +14,7 @@ Run setup.py!
 
 ### SAPP/WebGet(xGet)
 
-#### On Mac/Linux, make sure to run "Install Certificates.command" in /Programs/Python3.x/
+#### On Mac/GNU*Linux, make sure to run "Install Certificates.command" in /Programs/Python3.x/
 
 ### If you notice any other bug, please report it over at "Issues"
 
@@ -22,4 +22,4 @@ Run setup.py!
 
 ## [Tutorial](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-## [Tasks](https://github.com/nikkit001/turtle-shell/TASKS.md)
+## [Tasks](https://github.com/turtil-inc/turtle-shell/blob/main/TASKS.md)

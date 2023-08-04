@@ -23,9 +23,9 @@ def sapp():
             idir = os.getcwd()
     else:
         idir = sappdir
-    response = r.get("https://github.com/nikkit001/test/archive/refs/heads/"+sapp+".zip")
+    response = r.get("https://github.com/turtil-inc/sapp-pkgs/raw/main/"+sapp+".zip")
     if response.status_code == 200:
-        pkg = 'https://github.com/nikkit001/test/archive/refs/heads/'+sapp+'.zip'
+        pkg = 'https://github.com/turtil-inc/sapp-pkgs/raw/main/'+sapp+'.zip'
         http_response = urlopen(pkg)
         zipfile = ZipFile(BytesIO(http_response.read()))
         zipfile.extractall(path=idir)
