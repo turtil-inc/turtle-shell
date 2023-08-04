@@ -1,6 +1,9 @@
-import wget
 import os
-import zipfile as zf
+from urllib.request import urlopen
+from io import BytesIO
+from zipfile import ZipFile
+import requests as r
+import wget as wg
 
 
 # SETTINGS:
@@ -9,7 +12,7 @@ import zipfile as zf
 sappdir = ''
 
 
-# NOTE: THIS IS A GITHUB INSTALLER BASED ON WGET!!!
+# NOTE: THIS IS A INSTALLER BASED ON WGET/URLLIB!!!
 def sapp():
     global idir
     global pkg
@@ -22,16 +25,15 @@ def sapp():
         idir = sappdir
     if sapp == 'test':
         pkg = 'https://github.com/nikkit001/test/archive/refs/heads/main.zip'
-        branch = 'main'
         pkgfound = True
     else: pkgfound = False
     if pkgfound == True:
-        wget.download(pkg)
-        with zf.ZipFile(sapp + '-' + branch + '.zip') as f:
-            f.extractall()
+        http_response = urlopen(pkg)
+        zipfile = ZipFile(BytesIO(http_response.read()))
+        zipfile.extractall(path=idir)
     else: print('package not found')
 
         
 def webget():
     url = input('url: ')
-    wget.download(url)
+    wg.download(url)

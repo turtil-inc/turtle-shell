@@ -28,6 +28,8 @@ def help():
     print('echo: prints ur outgoing input')
     print('clear: clears ur console')
     print('printer: a "printer"')
+    print('webget: install a package/file in ypur current directory')
+    print('sapp: install a shity ass python package')
 
 
 def shell():
