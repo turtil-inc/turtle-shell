@@ -23,14 +23,13 @@ def sapp():
             idir = os.getcwd()
     else:
         idir = sappdir
-    if sapp == 'test':
-        pkg = 'https://github.com/nikkit001/test/archive/refs/heads/main.zip'
-        pkgfound = True
-    else: pkgfound = False
-    if pkgfound == True:
+    response = r.get("https://github.com/nikkit001/test/archive/refs/heads/"+sapp+".zip")
+    if response.status_code == 200:
+        pkg = 'https://github.com/nikkit001/test/archive/refs/heads/'+sapp+'.zip'
         http_response = urlopen(pkg)
         zipfile = ZipFile(BytesIO(http_response.read()))
         zipfile.extractall(path=idir)
+
     else: print('package not found')
 
         
