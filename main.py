@@ -29,7 +29,8 @@ def help():
     print('clear: clears ur console')
     print('printer: a "printer"')
     print('webget: install a package/file in ypur current directory')
-    print('sapp: install a shity ass python package')
+    print('sapp: installs a sh*ty a*s python package')
+    print('sapp lp: lists all sapp packages')
 
 
 def shell():
