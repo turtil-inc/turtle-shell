@@ -36,3 +36,10 @@ def sapp():
 def webget():
     url = input('url: ')
     wg.download(url)
+
+def sapplp():
+    wg.download('https://raw.githubusercontent.com/turtil-inc/sapp-pkgs/main/pkg-lists.txt')
+    file = open('pkg-lists.txt', "r")
+    print('')
+    print(file.read())
+    file.close()

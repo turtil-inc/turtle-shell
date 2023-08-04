@@ -79,6 +79,16 @@ def shell():
             xg.webget()
         elif i == 'unzip':
             z.unzip()
+        elif i == 'sapp lp':
+            olddir = os.getcwd()
+            newdir = c.prgrmdata + 'turtlesdata'
+            os.chdir(c.prgrmdata)
+            if os.path.exists(newdir):
+                os.chdir(newdir)
+            else:
+                os.mkdir(newdir)
+            xg.sapplp()
+            os.chdir(olddir)
         else:
             print('Module "' + i + '" not found. Try again')
 
