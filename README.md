@@ -14,7 +14,7 @@ Run setup.py!
 
 ### SAPP/WebGet(xGet)
 
-#### On Mac/GNU*Linux, make sure to run "Install Certificates.command" in /Programs/Python3.x/
+On Mac/GNU*Linux, make sure to run "Install Certificates.command" in your Python 3 directory
 
 ### If you notice any other bug, please report it over at "Issues"
 
